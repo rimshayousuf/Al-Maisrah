@@ -1,0 +1,133 @@
+*Financial(GL-setup)
+
+1-SegmentValue: 
+ data is not defined error occur while creating.
+ show loading on view form, ok button is not working.
+ on Post show loading button not working properly.
+
+2-Budget:
+ create API pending
+
+3-ExtendedJob:
+When form is open it shows error 
+-rows.map is not a function
+-Something went wrong:
+ Cannot read properties of null (reading 'scrollWidth')
+
+-Buying----> AccountCode---> it show error(onClickCancelBtn is not a function)
+-JobCode shouldn't edit in edit mode
+
+ 4-Jobs: data is not defined error occur while creating job.
+
+*Financial(GL-Transaction)
+ All credit or debit fields path are not fixed.
+
+1-JournalEntry:
+ credit or debit path is not fixed.
+ same record multiple time created.
+ Issues in credit and debit payment entry field when edit that payment it add extra 0 by itself.
+ Export PDF is not working.only csv file download.
+
+2-JournalPayment:
+ Issues in debit payment entry digits field when edit or create it add extra 0 by itself.
+ 
+3-JournalReceipt:
+ Credit amount is not updated in total amount field.
+
+4-BankTransfer:
+ When open form it show console error "currency is not defined"(console error)
+
+5-PattyCash:
+Error saving record when click to save all record.
+No records to display in table.
+
+*Financial(Payable-Setup)
+
+ 2-Vendors: Profile lookup issue, value is not selected by itself.
+  
+*Financial(Payable-Transaction)
+ 
+1-VendorInvoice:
+ Issue in amount digits it add extra 0s by itself.
+
+2-VendorPayments:
+  setIsCurrencyLookUp is not defined.(console error)
+  
+*Financial(Receivable-Setup)
+
+1-Customers: 
+ when select order booker from dropdown, selected collector is unselected. 
+
+*Financial(Receivable-Transaction)
+
+1-CustomerInvoice: 
+ Issues in amount entry field it add extra 0 by itself.
+
+*SOP(Setup)
+1-Sales Setup: No form display
+
+*SOP(Transaction)
+
+1-Sales Quotation: 
+When open form error occur, Cannot read properties of undefined (reading 'rows')❌
+2-Sales Order: no error but when form run , error :
+Timed out retrying after 4050ms: cy.click() failed because this element:
+<button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root" tabindex="0" type="button" aria-label="Add New" data-mui-internal-clone-element="true">...</button>
+is being covered by another element:
+<div class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters css-buktoi-MuiButtonBase-root-MuiListItemButton-root" tabindex="0" role="button">...</div>
+Fix this problem, or use {force: true} to disable error checking.
+
+3-Delivery Order: 
+  On saving record show error 'Allocation Process RollBacked!'.
+  no data is found order No and item lookup.❌
+4-Gate pass: 
+ form is not working properly most of the lookup in data is not found.
+ location, item and packing UOM in lookup data not found. ✅
+5-Sales Invoice: no error , but onSave it shows Error saving record and it add extra 0 in all amounts.
+6-Sales Return: 
+  When open form error occur, "Cannot read properties of undefined (reading 'length')".❌
+
+*POP(Setup)
+1-Purchase Setup: No form display
+
+*POP(Transaction)
+
+1-PurchaseRequisition: fields path are not fixed (feright amount, packing, quantity, price etc)
+2-PurchaseQuote: view , edit, delete hoga ya nhi?
+3-Goods Receipt Note:
+Errors:
+No record found.(success: false).
+no option in Order No dropdown.
+add extra 0 in all amounts itself.
+4-Purchase Invoice:
+Errors:
+No record found.(success: false).
+no option in Gr No dropdown.
+show invalid period error when click on Save record
+add extra 0 in all amounts itself.
+5-Purchase Return:
+Errors:
+no option in Gr No dropdown.
+onSave error is invalid Period.
+add extra 0 in all amounts itself.
+6-Purchase Quote:
+ show continue loading on create(save)
+ it shows VendorCode is Empty 
+add extra 0 in all amounts itself.
+
+*Inventory(Setup)
+
+1-Inventory Setup: There is no form display.
+2-locations: Click Onsave button to create/ Edit record it shows error (initailizeState is not defined). 
+3-ItemClass: If delete any created record from list it shows error (Header is not defined).
+
+*Inventory(Transaction)
+
+1-Transfers: CLick onSave button to create/ Edit record it show error (ADJDetailData.Data.find is not a function).
+2-Receiving: source location, Transfer No and Items loopup are not opening, form isn't create.
+3-Adjustments: CLick onSave button to create/Edit record it show error, Cannot read properties of undefined (reading 'rollback')
+
+
+
+
+
