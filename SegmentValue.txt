@@ -1,0 +1,94 @@
+*Financial(GL-setup)
+
+1-SegmentValue: 
+ data is not defined error occur while creating.
+ show loading on view form, ok button is not working.
+ on Post show loading button not working properly.
+
+2-Budget:
+ create API pending
+
+3-ExtendedJob:
+When form is open it shows error 
+-rows.map is not a function
+-Something went wrong:
+ Cannot read properties of null (reading 'scrollWidth')
+
+-Buying----> AccountCode---> it show error(onClickCancelBtn is not a function)
+-JobCode shouldn't edit in edit mode
+
+ 4-Jobs: data is not defined error occur while creating job.
+
+
+*Financial(GL-Transaction)
+ All credit or debit fields path are not fixed.
+
+1-JournalEntry:
+ credit or debit path is not fixed.
+ same record multiple time created.
+ Issues in credit and debit payment entry field when edit that payment it add extra 0 by itself.
+ Export PDF is not working.only csv file download.
+
+2-JournalPayment:
+ Issues in debit payment entry digits field when edit or create it add extra 0 by itself.
+ Path fixed on edit mode of debit amount this (#mui-223).
+ Export PDF is not working.only csv file download.
+
+3-JournalReceipt:
+ Credit amount is not updated in total amount field.
+
+4-BankTransfer:
+ When open form it show console error "currency is not defined"
+
+5-PattyCash:
+Error saving record when click to save all record.
+
+*Financial(Payable-Setup)
+
+ 1-VendorCategory: 
+   json file issue data is not found from that file it gives error (Cannot read properties of undefined (reading 'VendCategoryDesc1' nd all).
+
+ 2-Vendors: Profile lookup issue, value is not selected by itself.
+  pdf is not exporting.
+
+*Financial(Payable-Transaction)
+ 
+1-VendorInvoice:
+ Issue in amount digits it add extra 0s by itself.
+
+2-VendorPayments:
+  setIsCurrencyLookUp is not defined.
+  
+*Financial(Receivable-Setup)
+
+1-Customers: 
+ when select order booker from dropdown, selected collector is unselected. 
+
+*Financial(Receivable-Transaction)
+
+1-CustomerInvoice: 
+ Issues in amount entry field it add extra 0 by itself.
+
+*SOP(Transaction)
+
+1-Sales Quotation: Error saving Record, no data is found in item lookup
+
+2-Sales Order: 
+ Invalid column name 'NetAmount_Cur'.
+ Error Saving record, no data is found quote No and item lookup.
+
+3-Delivery Order: 
+  On saving record show error 'Allocation Process RollBacked!'.
+  no data is found order No and item lookup.
+
+4-Gate pass: 
+ form is not working properly most of the lookup in data is not found.
+ location, item and packing UOM in lookup data not found.
+
+5-Sales Invoice: 
+  When open form error occur, "Cannot read properties of undefined (reading 'find')".
+
+6-Sales Return: 
+  When open form error occur, "Cannot read properties of undefined (reading 'length')".
+
+
